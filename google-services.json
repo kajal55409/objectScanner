@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "839826333179",
+    "firebase_url": "https://objectscanner-5854a-default-rtdb.firebaseio.com",
+    "project_id": "objectscanner-5854a",
+    "storage_bucket": "objectscanner-5854a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839826333179:android:6b16ad63200a36e6017f5e",
+        "android_client_info": {
+          "package_name": "com.tk11203.scanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839826333179-fisgbh1e6jps59n7avau0e4vj3ml5kce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARZ3-kixyxDqwkhdFCoC5WbIHl7xHYBl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839826333179-fisgbh1e6jps59n7avau0e4vj3ml5kce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
