@@ -1,0 +1,44 @@
+
+
+import React, { useState, useEffect } from "react";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Login from "../screens/Auth/Login";
+import Splash from "../screens/Auth/Splash";
+import Sign_up from "../screens/Auth/Sign_up";
+import Forgot_Password from "../screens/Auth/Forgot_Password";
+import Forgot_Otp from "../screens/Auth/Forgot_Otp";
+import Home from "../screens/Home/Home";
+import { firebase } from "../../config";
+import Profile from "../screens/Home/Profile";
+import ProductDetails from "../screens/Product/ProductDetails";
+import ProductAdd from "../screens/Product/ProductAdd";
+import Object_scanner from "../screens/Home/Object_scanner";
+import { NavigationContainer } from "@react-navigation/native";
+import Demo from "../screens/Product/Demo";
+import Web_page from "../screens/Product/Web_page";
+const Stack = createNativeStackNavigator();
+const Route = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Splash" component={Splash} />
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Sign_up" component={Sign_up} />
+        <Stack.Screen name="Forgot_Password" component={Forgot_Password} />
+        <Stack.Screen name="Forgot_Otp" component={Forgot_Otp} />
+        <Stack.Screen name="Home" component={Home} />
+        {/* <Stack.Screen name='MessagePage' component={MessagePage}
+        options={{ headerShown: false }} /> */}
+        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="ProductAdd" component={ProductAdd} />
+        <Stack.Screen name="ProductDetails" component={ProductDetails} />
+        <Stack.Screen name="Object_scanner" component={Object_scanner} />
+        <Stack.Screen name="Demo" component={Demo} />
+        <Stack.Screen name="Web_page" component={Web_page} />
+
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default Route;
